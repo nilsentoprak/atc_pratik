@@ -1,17 +1,24 @@
-# atc_pratik
+# ATC Telsiz Konuşma Pratiği
 
-A new Flutter project.
+Pilot adayları için Flutter/Dart ile geliştirilmiş sesli ATC (hava trafik kontrol) telsiz konuşma eğitim uygulaması.
 
-## Getting Started
+## Özellikler
 
-This project is a starting point for a Flutter application.
+- Kule talimatları metin-ses dönüşümü (flutter_tts) ile sesli oynatılır
+- Mikrofon düğmesine basılarak söylenen geri okuma, konuşma tanıma (speech_to_text) ile metne çevrilir
+- Sayı ve fonetik ifadeler ("niner", "tree") normalleştirilerek kelime bazlı puanlanır
+- 5 uçuş evresi: taksi, kalkış, transponder, tırmanış, iniş
+- Evre bazlı sonuç özeti ve tekrar deneme
 
-A few resources to get you started if this is your first Flutter project:
+## Kurulum
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+    flutter pub get
+    flutter run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Kullanılan Teknolojiler
+
+Flutter, Dart, flutter_tts, speech_to_text
+
+## Sınırlılıklar
+
+Eğitim amaçlı bir prototiptir, resmî uçuş eğitiminin yerini tutmaz.
